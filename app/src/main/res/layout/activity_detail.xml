@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8FAFC"
+    tools:context=".DetailActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:fillViewport="true"
+        android:paddingBottom="24dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Top Header Title -->
+            <TextView
+                android:id="@+id/txtJudul"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/oswald_regular"
+                android:gravity="center"
+                android:letterSpacing="0.08"
+                android:text="DETAIL FASILITAS"
+                android:textColor="#64748B"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- Aesthetic Main Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardAesthetic"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="20dp"
+                app:cardBackgroundColor="#FFFFFF"
+                app:cardCornerRadius="24dp"
+                app:cardElevation="2dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtJudul"
+                app:strokeColor="#E2E8F0"
+                app:strokeWidth="1dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:padding="24dp">
+
+                    <!-- Badge Tag / Kategori (POSISI DI TENGAH) -->
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardBackgroundColor="#E0F2FE"
+                        app:cardCornerRadius="50dp"
+                        app:cardElevation="0dp"
+                        app:strokeColor="#BAE6FD"
+                        app:strokeWidth="1dp">
+
+                        <TextView
+                            android:id="@+id/txtKategori"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/oswald_regular"
+                            android:gravity="center"
+                            android:paddingHorizontal="18dp"
+                            android:paddingVertical="6dp"
+                            android:text="Kategori : Taman"
+                            android:textColor="#0284C7"
+                            android:textSize="13sp"
+                            android:textStyle="bold" />
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <!-- Nama Fasilitas -->
+                    <TextView
+                        android:id="@+id/txtNamaFasilitas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:fontFamily="@font/oswald_regular"
+                        android:gravity="center"
+                        android:text="Taman Kota Pekanbaru"
+                        android:textColor="#0F172A"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <!-- Divider Mungil -->
+                    <View
+                        android:layout_width="40dp"
+                        android:layout_height="3dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="#E2E8F0" />
+
+                    <!-- Box Info Lokasi & Jam (Estetis & Neat) -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cardBackgroundColor="#F8FAFC"
+                            app:cardCornerRadius="14dp"
+                            app:cardElevation="0dp"
+                            app:strokeColor="#F1F5F9"
+                            app:strokeWidth="1dp">
+
+                            <TextView
+                                android:id="@+id/txtLokasi"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/oswald_regular"
+                                android:padding="14dp"
+                                android:text="Lokasi : Jl. Jenderal Sudirman"
+                                android:textColor="#334155"
+                                android:textSize="14sp" />
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            app:cardBackgroundColor="#F8FAFC"
+                            app:cardCornerRadius="14dp"
+                            app:cardElevation="0dp"
+                            app:strokeColor="#F1F5F9"
+                            app:strokeWidth="1dp">
+
+                            <TextView
+                                android:id="@+id/txtJam"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/oswald_regular"
+                                android:padding="14dp"
+                                android:text="Jam : 08.00 - 18.00"
+                                android:textColor="#334155"
+                                android:textSize="14sp" />
+                        </com.google.android.material.card.MaterialCardView>
+
+                    </LinearLayout>
+
+                    <!-- Section Deskripsi -->
+                    <TextView
+                        android:id="@+id/txtDeskripsi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:fontFamily="@font/oswald_regular"
+                        android:text="Deskripsi"
+                        android:textColor="#0F172A"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtIsiDeskripsi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/oswald_regular"
+                        android:lineSpacingMultiplier="1.2"
+                        android:text="Taman Kota merupakan salah satu fasilitas umum yang dapat digunakan oleh masyarakat untuk bersantai dan beraktivitas."
+                        android:textColor="#64748B"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Action Buttons Container -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="@+id/cardAesthetic"
+                app:layout_constraintStart_toStartOf="@+id/cardAesthetic"
+                app:layout_constraintTop_toBottomOf="@+id/cardAesthetic">
+
+                <Button
+                    android:id="@+id/btnLihatLokasi"
+                    style="@style/Widget.Material3.Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:fontFamily="@font/oswald_regular"
+                    android:letterSpacing="0.05"
+                    android:text="LIHAT LOKASI"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:cornerRadius="16dp" />
+
+                <Button
+                    android:id="@+id/btnLaporkan"
+                    style="@style/Widget.Material3.Button.OutlinedButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/oswald_regular"
+                    android:letterSpacing="0.05"
+                    android:text="LAPORKAN MASALAH"
+                    android:textColor="#EF4444"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:cornerRadius="16dp"
+                    app:strokeColor="#FCA5A5" />
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

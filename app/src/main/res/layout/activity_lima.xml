@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pertemuan5.LimaActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#0097A7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_scrollFlags="enterAlways"
+        app:subtitleTextColor="@android:color/white"
+        app:titleTextColor="@android:color/white" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:padding="24dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnWebView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="web view"
+                android:backgroundTint="#388E3C"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="lorem ipsum dolor sit amet consectetur adipiscing elit culpa nisi sint imperdiet deserunt voluptatum ducimus est animi quibusdam anim in dolore quo vero tempor ad eu atque est eligendi aliquip excepturi atque et quo officia maxime nihil id consectetur et dolore aliquip aute maxime id eu sunt aliquip voluptas rerum" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="lorem ipsum dolor sit amet consectetur adipiscing elit culpa nisi sint imperdiet deserunt voluptatum ducimus est animi quibusdam anim in dolore quo vero tempor ad eu atque est eligendi aliquip excepturi atque et quo officia maxime nihil id consectetur et dolore aliquip aute maxime id eu sunt aliquip voluptas rerum" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="lorem ipsum dolor sit amet consectetur adipiscing elit culpa nisi sint imperdiet deserunt voluptatum ducimus est animi quibusdam anim in dolore quo vero tempor ad eu atque est eligendi aliquip excepturi atque et quo officia maxime nihil id consectetur et dolore aliquip aute maxime id eu sunt aliquip voluptas rerum" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="lorem ipsum dolor sit amet consectetur adipiscing elit culpa nisi sint imperdiet deserunt voluptatum ducimus est animi quibusdam anim in dolore quo vero tempor ad eu atque est eligendi aliquip excepturi atque et quo officia maxime nihil id consectetur et dolore aliquip aute maxime id eu sunt aliquip voluptas rerum" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="lorem ipsum dolor sit amet consectetur adipiscing elit culpa nisi sint imperdiet deserunt voluptatum ducimus est animi quibusdam anim in dolore quo vero tempor ad eu atque est eligendi aliquip excepturi atque et quo officia maxime nihil id consectetur et dolore aliquip aute maxime id eu sunt aliquip voluptas rerum" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="lorem ipsum dolor sit amet consectetur adipiscing elit culpa nisi sint imperdiet deserunt voluptatum ducimus est animi quibusdam anim in dolore quo vero tempor ad eu atque est eligendi aliquip excepturi atque et quo officia maxime nihil id consectetur et dolore aliquip aute maxime id eu sunt aliquip voluptas rerum" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="lorem ipsum dolor sit amet consectetur adipiscing elit culpa nisi sint imperdiet deserunt voluptatum ducimus est animi quibusdam anim in dolore quo vero tempor ad eu atque est eligendi aliquip excepturi atque et quo officia maxime nihil id consectetur et dolore aliquip aute maxime id eu sunt aliquip voluptas rerum" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="lorem ipsum dolor sit amet consectetur adipiscing elit culpa nisi sint imperdiet deserunt voluptatum ducimus est animi quibusdam anim in dolore quo vero tempor ad eu atque est eligendi aliquip excepturi atque et quo officia maxime nihil id consectetur et dolore aliquip aute maxime id eu sunt aliquip voluptas rerum" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="lorem ipsum dolor sit amet consectetur adipiscing elit culpa nisi sint imperdiet deserunt voluptatum ducimus est animi quibusdam anim in dolore quo vero tempor ad eu atque est eligendi aliquip excepturi atque et quo officia maxime nihil id consectetur et dolore aliquip aute maxime id eu sunt aliquip voluptas rerum" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="lorem ipsum dolor sit amet consectetur adipiscing elit culpa nisi sint imperdiet deserunt voluptatum ducimus est animi quibusdam anim in dolore quo vero tempor ad eu atque est eligendi aliquip excepturi atque et quo officia maxime nihil id consectetur et dolore aliquip aute maxime id eu sunt aliquip voluptas rerum" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="lorem ipsum dolor sit amet consectetur adipiscing elit culpa nisi sint imperdiet deserunt voluptatum ducimus est animi quibusdam anim in dolore quo vero tempor ad eu atque est eligendi aliquip excepturi atque et quo officia maxime nihil id consectetur et dolore aliquip aute maxime id eu sunt aliquip voluptas rerum" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="lorem ipsum dolor sit amet consectetur adipiscing elit culpa nisi sint imperdiet deserunt voluptatum ducimus est animi quibusdam anim in dolore quo vero tempor ad eu atque est eligendi aliquip excepturi atque et quo officia maxime nihil id consectetur et dolore aliquip aute maxime id eu sunt aliquip voluptas rerum" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="lorem ipsum dolor sit amet consectetur adipiscing elit culpa nisi sint imperdiet deserunt voluptatum ducimus est animi quibusdam anim in dolore quo vero tempor ad eu atque est eligendi aliquip excepturi atque et quo officia maxime nihil id consectetur et dolore aliquip aute maxime id eu sunt aliquip voluptas rerum" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="lorem ipsum dolor sit amet consectetur adipiscing elit culpa nisi sint imperdiet deserunt voluptatum ducimus est animi quibusdam anim in dolore quo vero tempor ad eu atque est eligendi aliquip excepturi atque et quo officia maxime nihil id consectetur et dolore aliquip aute maxime id eu sunt aliquip voluptas rerum" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="lorem ipsum dolor sit amet consectetur adipiscing elit culpa nisi sint imperdiet deserunt voluptatum ducimus est animi quibusdam anim in dolore quo vero tempor ad eu atque est eligendi aliquip excepturi atque et quo officia maxime nihil id consectetur et dolore aliquip aute maxime id eu sunt aliquip voluptas rerum" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="lorem ipsum dolor sit amet consectetur adipiscing elit culpa nisi sint imperdiet deserunt voluptatum ducimus est animi quibusdam anim in dolore quo vero tempor ad eu atque est eligendi aliquip excepturi atque et quo officia maxime nihil id consectetur et dolore aliquip aute maxime id eu sunt aliquip voluptas rerum" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="lorem ipsum dolor sit amet consectetur adipiscing elit culpa nisi sint imperdiet deserunt voluptatum ducimus est animi quibusdam anim in dolore quo vero tempor ad eu atque est eligendi aliquip excepturi atque et quo officia maxime nihil id consectetur et dolore aliquip aute maxime id eu sunt aliquip voluptas rerum" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="lorem ipsum dolor sit amet consectetur adipiscing elit culpa nisi sint imperdiet deserunt voluptatum ducimus est animi quibusdam anim in dolore quo vero tempor ad eu atque est eligendi aliquip excepturi atque et quo officia maxime nihil id consectetur et dolore aliquip aute maxime id eu sunt aliquip voluptas rerum" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="lorem ipsum dolor sit amet consectetur adipiscing elit culpa nisi sint imperdiet deserunt voluptatum ducimus est animi quibusdam anim in dolore quo vero tempor ad eu atque est eligendi aliquip excepturi atque et quo officia maxime nihil id consectetur et dolore aliquip aute maxime id eu sunt aliquip voluptas rerum" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="lorem ipsum dolor sit amet consectetur adipiscing elit culpa nisi sint imperdiet deserunt voluptatum ducimus est animi quibusdam anim in dolore quo vero tempor ad eu atque est eligendi aliquip excepturi atque et quo officia maxime nihil id consectetur et dolore aliquip aute maxime id eu sunt aliquip voluptas rerum" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="lorem ipsum dolor sit amet consectetur adipiscing elit culpa nisi sint imperdiet deserunt voluptatum ducimus est animi quibusdam anim in dolore quo vero tempor ad eu atque est eligendi aliquip excepturi atque et quo officia maxime nihil id consectetur et dolore aliquip aute maxime id eu sunt aliquip voluptas rerum" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="lorem ipsum dolor sit amet consectetur adipiscing elit culpa nisi sint imperdiet deserunt voluptatum ducimus est animi quibusdam anim in dolore quo vero tempor ad eu atque est eligendi aliquip excepturi atque et quo officia maxime nihil id consectetur et dolore aliquip aute maxime id eu sunt aliquip voluptas rerum" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="lorem ipsum dolor sit amet consectetur adipiscing elit culpa nisi sint imperdiet deserunt voluptatum ducimus est animi quibusdam anim in dolore quo vero tempor ad eu atque est eligendi aliquip excepturi atque et quo officia maxime nihil id consectetur et dolore aliquip aute maxime id eu sunt aliquip voluptas rerum" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="lorem ipsum dolor sit amet consectetur adipiscing elit culpa nisi sint imperdiet deserunt voluptatum ducimus est animi quibusdam anim in dolore quo vero tempor ad eu atque est eligendi aliquip excepturi atque et quo officia maxime nihil id consectetur et dolore aliquip aute maxime id eu sunt aliquip voluptas rerum" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="lorem ipsum dolor sit amet consectetur adipiscing elit culpa nisi sint imperdiet deserunt voluptatum ducimus est animi quibusdam anim in dolore quo vero tempor ad eu atque est eligendi aliquip excepturi atque et quo officia maxime nihil id consectetur et dolore aliquip aute maxime id eu sunt aliquip voluptas rerum" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="lorem ipsum dolor sit amet consectetur adipiscing elit culpa nisi sint imperdiet deserunt voluptatum ducimus est animi quibusdam anim in dolore quo vero tempor ad eu atque est eligendi aliquip excepturi atque et quo officia maxime nihil id consectetur et dolore aliquip aute maxime id eu sunt aliquip voluptas rerum" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="lorem ipsum dolor sit amet consectetur adipiscing elit culpa nisi sint imperdiet deserunt voluptatum ducimus est animi quibusdam anim in dolore quo vero tempor ad eu atque est eligendi aliquip excepturi atque et quo officia maxime nihil id consectetur et dolore aliquip aute maxime id eu sunt aliquip voluptas rerum" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="lorem ipsum dolor sit amet consectetur adipiscing elit culpa nisi sint imperdiet deserunt voluptatum ducimus est animi quibusdam anim in dolore quo vero tempor ad eu atque est eligendi aliquip excepturi atque et quo officia maxime nihil id consectetur et dolore aliquip aute maxime id eu sunt aliquip voluptas rerum" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="lorem ipsum dolor sit amet consectetur adipiscing elit culpa nisi sint imperdiet deserunt voluptatum ducimus est animi quibusdam anim in dolore quo vero tempor ad eu atque est eligendi aliquip excepturi atque et quo officia maxime nihil id consectetur et dolore aliquip aute maxime id eu sunt aliquip voluptas rerum" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="lorem ipsum dolor sit amet consectetur adipiscing elit culpa nisi sint imperdiet deserunt voluptatum ducimus est animi quibusdam anim in dolore quo vero tempor ad eu atque est eligendi aliquip excepturi atque et quo officia maxime nihil id consectetur et dolore aliquip aute maxime id eu sunt aliquip voluptas rerum" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="lorem ipsum dolor sit amet consectetur adipiscing elit culpa nisi sint imperdiet deserunt voluptatum ducimus est animi quibusdam anim in dolore quo vero tempor ad eu atque est eligendi aliquip excepturi atque et quo officia maxime nihil id consectetur et dolore aliquip aute maxime id eu sunt aliquip voluptas rerum" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="lorem ipsum dolor sit amet consectetur adipiscing elit culpa nisi sint imperdiet deserunt voluptatum ducimus est animi quibusdam anim in dolore quo vero tempor ad eu atque est eligendi aliquip excepturi atque et quo officia maxime nihil id consectetur et dolore aliquip aute maxime id eu sunt aliquip voluptas rerum" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

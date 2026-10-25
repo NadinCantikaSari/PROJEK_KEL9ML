@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical" android:background="@color/bg_lavender">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/homeToolbar" android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize" android:background="@color/purple_primary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" app:titleTextColor="@android:color/white"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+      <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="16dp">
+        <TextView android:id="@+id/tvWelcome" android:layout_width="match_parent" android:layout_height="wrap_content"
+          android:text="Halo, Pengguna!" android:textColor="@color/text_purple" android:textSize="24sp"
+          android:textStyle="bold" android:fontFamily="@font/barlow_extrabold"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+          android:text="Selamat datang di Smart Public Facility" android:textColor="#666666" android:layout_marginTop="4dp"/>
+        <EditText android:id="@+id/etSearchFacility" android:layout_width="match_parent" android:layout_height="50dp"
+          android:layout_marginTop="18dp" android:background="@drawable/bg_search" android:hint="⌕  Cari fasilitas publik..."
+          android:singleLine="true" android:paddingHorizontal="14dp" android:inputType="text"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp"
+          android:text="Kategori" android:textColor="@color/text_purple" android:textSize="19sp" android:textStyle="bold"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginTop="10dp">
+          <TextView android:layout_width="0dp" android:layout_height="76dp" android:layout_weight="1" android:layout_marginEnd="4dp" android:gravity="center" android:background="#DDF3D8" android:text="🌳\nTaman" android:textColor="#315B35"/>
+          <TextView android:layout_width="0dp" android:layout_height="76dp" android:layout_weight="1" android:layout_marginHorizontal="4dp" android:gravity="center" android:background="#F0DDFB" android:text="🏃\nOlahraga" android:textColor="#713A8B"/>
+          <TextView android:layout_width="0dp" android:layout_height="76dp" android:layout_weight="1" android:layout_marginHorizontal="4dp" android:gravity="center" android:background="#D9F0FA" android:text="🏥\nKesehatan" android:textColor="#245E7A"/>
+          <TextView android:layout_width="0dp" android:layout_height="76dp" android:layout_weight="1" android:layout_marginStart="4dp" android:gravity="center" android:background="#F8E5D9" android:text="🏛\nUmum" android:textColor="#86553C"/>
+        </LinearLayout>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="22dp"
+          android:text="Rekomendasi" android:textColor="@color/text_purple" android:textSize="19sp" android:textStyle="bold"/>
+        <com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp"
+          app:cardCornerRadius="16dp" app:cardElevation="2dp" app:cardBackgroundColor="@android:color/white">
+          <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="14dp">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Taman Kota Pekanbaru" android:textColor="@color/text_purple" android:textSize="16sp" android:textStyle="bold"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="📍 Pusat Kota Pekanbaru" android:textColor="#666666"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:background="#DDF3D8" android:padding="6dp" android:text="Taman" android:textColor="#315B35"/>
+            <Button android:id="@+id/btnRecommendedDetail" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="Lihat Detail" android:backgroundTint="@color/purple_primary"/>
+          </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="22dp"
+          android:text="Fasilitas Terdekat" android:textColor="@color/text_purple" android:textSize="19sp" android:textStyle="bold"/>
+        <com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp"
+          app:cardCornerRadius="16dp" app:cardElevation="2dp" app:cardBackgroundColor="@android:color/white">
+          <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="14dp">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Taman Alam Mayang" android:textColor="@color/text_purple" android:textSize="16sp" android:textStyle="bold"/>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="📍 Pekanbaru, Riau" android:textColor="#666666"/>
+            <Button android:id="@+id/btnAllFacilities" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="Daftar Fasilitas" android:backgroundTint="@color/purple_primary"/>
+          </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <Button android:id="@+id/btnReport" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:text="Laporkan Masalah" android:backgroundTint="@color/purple_primary"/>
+        <Button android:id="@+id/btnHistory" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="Riwayat Laporan" android:backgroundTint="@color/purple_primary"/>
+        <Button android:id="@+id/btnLogout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="Logout" android:textColor="#B91C1C"/>
+      </LinearLayout>
+    </ScrollView>
+</LinearLayout>
